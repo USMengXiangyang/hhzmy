@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff3c00"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home_scan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:src="@mipmap/icon_scan_top" />
+
+        <ImageView
+            android:id="@+id/home_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7"
+            android:scaleType="fitXY"
+            android:src="@mipmap/home_sou" />
+
+        <ImageView
+            android:id="@+id/home_mes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:src="@mipmap/icon_mes_top" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/shouye_vp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginBottom="5dp">
+
+            </android.support.v4.view.ViewPager>
+
+            <com.hhzmy.view.My_shouye_grid_view1
+                android:id="@+id/home_gri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="4"></com.hhzmy.view.My_shouye_grid_view1>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#d0d0d0" />
+
+            <ImageView
+                android:id="@+id/title_img"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/id_gallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"></LinearLayout>
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#d0d0d0" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:id="@+id/title2_img"/>
+            <com.hhzmy.view.My_shouye_grid_view
+                android:id="@+id/shouye_grid2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"></com.hhzmy.view.My_shouye_grid_view>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:id="@+id/title3_img"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:id="@+id/my_img1"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:id="@+id/my_img2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:id="@+id/my_img3"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:id="@+id/my_img4"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:id="@+id/my_img5"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:id="@+id/my_img6"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_img4"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_img5"/>
+            <android.support.v7.widget.RecyclerView        android:id="@+id/id_recyclerview1"
+                android:divider="#ffff0000"
+                android:dividerHeight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_img6"/>
+            <android.support.v7.widget.RecyclerView        android:id="@+id/id_recyclerview2"
+                android:divider="#ffff0000"
+                android:dividerHeight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_img7"/>
+            <android.support.v7.widget.RecyclerView        android:id="@+id/id_recyclerview3"
+                android:divider="#ffff0000"
+                android:dividerHeight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:layout_height="wrap_content"
+                android:id="@+id/title_img8"/>
+            <android.support.v7.widget.RecyclerView        android:id="@+id/id_recyclerview4"
+                android:divider="#ffff0000"
+                android:dividerHeight="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                android:id="@+id/title_img9"/>
+            <com.hhzmy.view.My_shouye_list_view
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:id="@+id/shouye_list"></com.hhzmy.view.My_shouye_list_view>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
